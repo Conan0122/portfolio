@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Bhatt</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+  </style>
+</head>
+
+<body class="w-full font-Mont h-screen bg-darkPurple text-2xl overflow-x-hidden">
+  <header class="text-xl text-lightPurple">
+    <nav
+      class="w-full h-[2rem] z-10 font-medium flex justify-between items-center py-11 fixed top-0 bg-transparent backdrop-blur-md">
+      <h1 class="ml-20 cursor-default tracking-widest lowercase text-2xl">
+        &lt;abhishek/&gt;
+      </h1>
+      <ul class="flex font-light justify-center tracking-wider gap-28 items-center mx-10">
+        <li class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out">
+          <a href="#home">&lt;Home&gt;</a>
+        </li>
+        <li class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out">
+          <a href="#about">&lt;About&gt;</a>
+        </li>
+        <li class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out">
+          <a href="#projects">&lt;Projects&gt;</a>
+        </li>
+        <li class="hover:bg-purple-900 hover:rounded-full cursor-pointer bg-justPurple p-3 rounded-2xl transition-all duration-300 ease-in-out">
+          <a href="#contact">&lt;Contact&gt;</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="w-full h-auto mt-24 text-lightPurple">
+    <div id="home" class="flex h-screen justify-between -mt-16 items-center">
+      <div class="leftPart ml-20">
+        <h1>Hey, </h1>
+        <h1 class="text-7xl leading-loose cursor-pointer tracking-wider">
+          I'm <span class="font-semibold text-purple-400">Abhi</span>shek Bhatt<span class="text-purple-400">.</span>
+        </h1>
+        <h2>A passionate <span class="uppercase tracking-widest font-semibold leading-loose">Software Developer</span></h2>
+        <p class="font-light text-lg">I build creative stuffs</p>
+        <!-- Links to github, linkedin or anything else -->
+        <hr class="w-36 mt-11 border-2 border-lightPurple animate-pulse" />
+      </div>
+      <div class="rightPart w-[30rem] h-[30rem] mr-36 mt-10">
+        <img class="bg-cover border-lightPurple border-8 p-5 rounded-full cursor-pointer"
+          src="/Images/circular_profile.png" alt="portfolio_Image" />
+      </div>
+    </div>
+
+    <!-- Diagonal section -->
+    <div
+      class="absolute w-0 h-0 -z-10 top-[20%] left-0 border-l-[100vw] border-l-transparent border-b-[80vh] border-b-lightPurple">
+    </div>
+
+    <div id="about" class="w-full h-screen flex items-center">
+      <div class="leftpart w-full h-full flex flex-col items-center justify-center bg-darkPurple">
+        <div class="outerborder border-2 p-2 border-lightPurple rounded-3xl">
+          <h1 class=" text-lightPurple border-2 p-10 rounded-2xl font-semibold uppercase text-3xl tracking-widest">About me</h1>
+        </div>
+      </div>
+
+      <div class="rightpart w-full h-full bg-justPurple p-14 gap-10 rounded-l-[8rem] flex flex-col justify-center items-center">
+        <div class="overflow-hidden border-2 border-lightPurple rounded-full">
+          <img class="w-44 h-44 object-cover hover:scale-125 transition-transform duration-300 ease-in-out" src="/Images/dark themed pfp.webp" alt="portfolio_Image">
+        </div>
+        <p class="text-center">I&apos;m Abhishek Bhatt, a passionate <span class="text-lightPurple font-semibold drop-shadow-2xl">Software Developer</span> with a love for building creative solutions across web, game, and mobile platforms. I enjoy solving problems and turning ideas into real-world applications.</p>
+        
+        <!-- Link to github and linkedIn -->
+         <p class="text-center">Feel free to connect with me on GitHub or LinkedIn to collaborate or just say hello!</p>
+        <div class="flex items-center space-x-4">
+          <a href="https://github.com/Conan0122" target="_blank" class="text-lightPurple hover:scale-125 transition-transform duration-300 ease-in-out">
+            <i class="fab fa-github fa-2xl"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/abhi-b-841335305" target="_blank" class="text-lightPurple hover:scale-125 transition-transform duration-300 ease-in-out">
+            <i class="fab fa-linkedin fa-2xl"></i>
+          </a>
+        </div>
+        <p class="text-center">Check out my resume here: </p>
+        <a href="/Resume/Abhishek_Bhatt_Resume.pdf" target="_blank"><button class="bg-ivory text-black rounded-2xl p-3 hover:bg-darkPurple hover:text-lightPurple hover:scale-125  transition-all duration-300 ease-in-out">Resume</button> </a>
+      </div>
+
+    </div>
+
+    <div id="projects" class="w-full h-screen flex flex-col items-center mt-5">
+      <div class="toppart w-full h-[40%] flex flex-col items-center justify-end">
+          <h1 class=" text-lightPurple font-extrabold text-9xl capitalize tracking-tight">Projects.</h1>
+      </div>
+      
+      
+      <div class="botpart w-full h-full bg-purple-900 bg-opacity-30 p-14 ml-5 mt-4 gap-10 rounded-3xl flex flex-col justify-center items-center">
+        <div class="cardcontainer w-full h-full flex justify-evenly items-center">
+          <div class="card1 w-80 h-80 cursor-pointer hover:scale-105 bg-ivory p-11 rounded-xl transition-all duration-800 ease-linear">
+            <h1 class="text-center text-black">Game designed: drag them all</h1>
+          </div>
+
+          <div class="card1 w-80 h-80 cursor-pointer hover:scale-105 bg-ivory p-11 rounded-xl transition-all duration-800 ease-linear">
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    
+
+  </main>
+  <footer class="w-full h-screen ">
+    <div class="w-full h-screen">
+      <h3 class="text-white">Designed and built by Abhishek Bhatt</h3>
+    </div>
+  </footer>
+</body>
+
+</html>
