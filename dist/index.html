@@ -1,124 +1,648 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhishek Bhatt</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhishek Bhatt</title>
-  <link rel="stylesheet" href="output.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-  </style>
-</head>
-
-<body class="w-full font-Mont h-screen bg-darkPurple text-2xl overflow-x-hidden">
-  <header class="text-xl text-lightPurple">
-    <nav
-      class="w-full h-[2rem] z-10 font-medium flex justify-between items-center py-11 fixed top-0 bg-transparent backdrop-blur-md">
-      <h1 class="ml-20 cursor-default tracking-widest lowercase text-2xl">
-        &lt;abhishek/&gt;
-      </h1>
-      <ul class="flex font-light justify-center tracking-wider gap-28 items-center mx-10">
-        <li class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out">
-          <a href="#home">&lt;Home&gt;</a>
-        </li>
-        <li class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out">
-          <a href="#about">&lt;About&gt;</a>
-        </li>
-        <li class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out">
-          <a href="#projects">&lt;Projects&gt;</a>
-        </li>
-        <li class="hover:bg-purple-900 hover:rounded-full cursor-pointer bg-justPurple p-3 rounded-2xl transition-all duration-300 ease-in-out">
-          <a href="#contact">&lt;Contact&gt;</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="w-full h-auto mt-24 text-lightPurple">
-    <div id="home" class="flex h-screen justify-between -mt-16 items-center">
-      <div class="leftPart ml-20">
-        <h1>Hey, </h1>
-        <h1 class="text-7xl leading-loose cursor-pointer tracking-wider">
-          I'm <span class="font-semibold text-purple-400">Abhi</span>shek Bhatt<span class="text-purple-400">.</span>
+  <body
+    class="w-full font-Mont h-screen bg-darkPurple text-2xl overflow-x-hidden relative"
+  >
+    <header class="text-xl text-lightPurple">
+      <nav
+        class="w-full h-[2rem] z-10 font-medium flex justify-between items-center py-11 fixed top-0 bg-transparent backdrop-blur-md"
+      >
+        <h1 class="ml-20 cursor-default tracking-widest lowercase text-2xl">
+          &lt;abhi/&gt;
         </h1>
-        <h2>A passionate <span class="uppercase tracking-widest font-semibold leading-loose">Software Developer</span></h2>
-        <p class="font-light text-lg">I build creative stuffs</p>
-        <!-- Links to github, linkedin or anything else -->
-        <hr class="w-36 mt-11 border-2 border-lightPurple animate-pulse" />
-      </div>
-      <div class="rightPart w-[30rem] h-[30rem] mr-36 mt-10">
-        <img class="bg-cover border-lightPurple border-8 p-5 rounded-full cursor-pointer"
-          src="/Images/circular_profile.png" alt="portfolio_Image" />
-      </div>
-    </div>
+        <div class="lg:hidden relative z-30">
+          <!-- Hamburger Icon -->
+          <button id="hamburger" class="p-2 rounded-md bg-darkPurple">
+            <i class="fas fa-bars text-lightPurple text-3xl"></i>
+          </button>
+        </div>
 
-    <!-- Diagonal section -->
-    <div
-      class="absolute w-0 h-0 -z-10 top-[20%] left-0 border-l-[100vw] border-l-transparent border-b-[80vh] border-b-lightPurple">
-    </div>
+        <!-- Desktop Menu -->
+        <ul
+          class="hidden lg:flex font-light justify-center tracking-wider gap-8 items-center mx-10"
+        >
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out"
+          >
+            <a href="#home">&lt;Home&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out"
+          >
+            <a href="#about">&lt;About&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out"
+          >
+            <a href="#experience">&lt;Experience&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out"
+          >
+            <a href="#projects">&lt;Projects&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 hover:rounded-full cursor-pointer bg-justPurple p-3 rounded-2xl transition-all duration-300 ease-in-out"
+          >
+            <a href="#contact">&lt;Contact&gt;</a>
+          </li>
+        </ul>
+      </nav>
 
-    <div id="about" class="w-full h-screen flex items-center">
-      <div class="leftpart w-full h-full flex flex-col items-center justify-center bg-darkPurple">
-        <div class="outerborder border-2 p-2 border-lightPurple rounded-3xl">
-          <h1 class=" text-lightPurple border-2 p-10 rounded-2xl font-semibold uppercase text-3xl tracking-widest">About me</h1>
+      <!-- Overlay -->
+      <div
+        id="overlay"
+        class="hidden fixed inset-0 bg-black bg-opacity-50 z-20"
+      ></div>
+
+      <!-- Dropdown Menu -->
+      <div
+        id="dropdown"
+        class="hidden fixed top-[4rem] left-0 w-full bg-darkPurple z-30 shadow-md"
+      >
+        <ul
+          class="flex flex-col font-light tracking-wider gap-6 items-center py-6"
+        >
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-xl transition-colors duration-500 ease-in-out"
+          >
+            <a href="#home">&lt;Home&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-xl transition-colors duration-500 ease-in-out"
+          >
+            <a href="#about">&lt;About&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-xl transition-colors duration-500 ease-in-out"
+          >
+            <a href="#experience">&lt;Experience&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 cursor-pointer p-4 rounded-xl transition-colors duration-500 ease-in-out"
+          >
+            <a href="#projects">&lt;Projects&gt;</a>
+          </li>
+          <li
+            class="hover:bg-purple-900 rounded-xl cursor-pointer p-3 transition-all duration-300 ease-in-out"
+          >
+            <a href="#contact">&lt;Contact&gt;</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="w-full h-auto text-lightPurple">
+      <div
+        id="home"
+        class="flex flex-col-reverse w-full h-screen lg:flex-row md:h-screen lg:px-28 justify-evenly items-center"
+      >
+        <!-- Left Part -->
+        <div
+          class="leftPart mt-5 w-[90%] bg-black rounded-xl bg-opacity-70 p-10 lg:bg-transparent md:w-[70%]"
+        >
+          <!-- <div class="leftPart ml-20 md:ml-0 md:w-1/2"> -->
+          <h1>Hey,</h1>
+          <h1
+            class="text-3xl md:text-4xl md:mt-5 lg:text-5xl leading-loose cursor-pointer tracking-wider"
+          >
+            I'm <span class="font-semibold text-purple-400">Abhi</span>shek
+            Bhatt<span class="text-purple-400">.</span>
+          </h1>
+          <p class="md:mt-5">
+            <span class="text-lg md:text-xl lg:text-2xl">A passionate</span>
+            <span
+              class="text-xl md:text-2xl lg:text-3xl uppercase tracking-widest font-semibold leading-loose"
+              >Software Developer</span
+            >
+          </p>
+          <p class="mt-5 font-light text-lg lg:text-xl">
+            I build creative stuffs
+          </p>
+          <!-- Links to github, linkedin or anything else -->
+          <hr class="w-36 mt-5 border-2 border-lightPurple animate-pulse" />
+        </div>
+        <!-- Right Part (Image) -->
+        <div
+          class="rightPart mt-32 size-[15rem] md:size-[20rem] lg:size-[30rem]"
+        >
+          <img
+            class="bg-cover border-lightPurple border-4 p-3 rounded-full cursor-pointer object-cover"
+            src="/Images/circular_profile.png"
+            alt="portfolio_Image"
+          />
         </div>
       </div>
 
-      <div class="rightpart w-full h-full bg-justPurple p-14 gap-10 rounded-l-[8rem] flex flex-col justify-center items-center">
-        <div class="overflow-hidden border-2 border-lightPurple rounded-full">
-          <img class="w-44 h-44 object-cover hover:scale-125 transition-transform duration-300 ease-in-out" src="/Images/dark themed pfp.webp" alt="portfolio_Image">
+      <!-- Diagonal section -->
+      <div
+        class="absolute w-0 h-0 -z-10 top-[20%] left-0 border-l-[100vw] border-l-transparent border-b-[80vh] border-b-lightPurple"
+      ></div>
+
+      <div
+        id="about"
+        class="w-full h-auto flex flex-col md:flex-row md:mt-20 items-center"
+      >
+        <div
+          class="leftpart w-full h-full flex flex-col items-center justify-center my-16 bg-darkPurple"
+        >
+          <div class="outerborder border-2 p-2 border-lightPurple rounded-3xl">
+            <h1
+              class="text-lightPurple border-2 p-5 md:p-10 rounded-2xl font-semibold uppercase text-3xl tracking-widest"
+            >
+              About me
+            </h1>
+          </div>
         </div>
-        <p class="text-center">I&apos;m Abhishek Bhatt, a passionate <span class="text-lightPurple font-semibold drop-shadow-2xl">Software Developer</span> with a love for building creative solutions across web, game, and mobile platforms. I enjoy solving problems and turning ideas into real-world applications.</p>
-        
-        <!-- Link to github and linkedIn -->
-         <p class="text-center">Feel free to connect with me on GitHub or LinkedIn to collaborate or just say hello!</p>
-        <div class="flex items-center space-x-4">
-          <a href="https://github.com/Conan0122" target="_blank" class="text-lightPurple hover:scale-125 transition-transform duration-300 ease-in-out">
-            <i class="fab fa-github fa-2xl"></i>
+
+        <div
+          class="rightpart w-full h-full bg-justPurple p-14 gap-10 rounded-3xl md:rounded-l-[6rem] md:rounded-r-none flex flex-col justify-center items-center"
+        >
+          <div class="overflow-hidden border-2 border-lightPurple rounded-full">
+            <img
+              class="w-44 h-44 object-cover hover:scale-125 transition-transform duration-300 ease-in-out"
+              src="/Images/dark themed pfp.webp"
+              alt="portfolio_Image"
+            />
+          </div>
+          <p class="text-center">
+            I&apos;m Abhishek Bhatt, a passionate
+            <span class="text-lightPurple font-semibold drop-shadow-2xl"
+              >Software Developer</span
+            >
+            with a love for building creative solutions across web, game, and
+            mobile platforms. I enjoy solving problems and turning ideas into
+            real-world applications.
+          </p>
+
+          <p class="text-center">
+            Feel free to connect with me on GitHub or LinkedIn to collaborate or
+            just say hello!
+          </p>
+          <div class="flex items-center space-x-4">
+            <a
+              href="https://github.com/Conan0122"
+              target="_blank"
+              class="text-lightPurple hover:scale-125 transition-transform duration-300 ease-in-out"
+            >
+              <i class="fab fa-github fa-2xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abhi-b-841335305"
+              target="_blank"
+              class="text-lightPurple hover:scale-125 transition-transform duration-300 ease-in-out"
+            >
+              <i class="fab fa-linkedin fa-2xl"></i>
+            </a>
+          </div>
+          <p class="text-center">Check out my resume here:</p>
+          <a href="/Resume/Abhishek_Bhatt_Resume.pdf" target="_blank">
+            <button
+              class="bg-ivory text-black rounded-2xl p-3 hover:bg-darkPurple hover:text-lightPurple hover:scale-125 transition-all duration-300 ease-in-out"
+            >
+              Resume
+            </button>
           </a>
-          <a href="https://www.linkedin.com/in/abhi-b-841335305" target="_blank" class="text-lightPurple hover:scale-125 transition-transform duration-300 ease-in-out">
-            <i class="fab fa-linkedin fa-2xl"></i>
-          </a>
         </div>
-        <p class="text-center">Check out my resume here: </p>
-        <a href="/Resume/Abhishek_Bhatt_Resume.pdf" target="_blank"><button class="bg-ivory text-black rounded-2xl p-3 hover:bg-darkPurple hover:text-lightPurple hover:scale-125  transition-all duration-300 ease-in-out">Resume</button> </a>
       </div>
 
-    </div>
+      <section
+        id="experience"
+        class="bg-darkPurple text-lightPurple py-16 px-6"
+      >
+        <div
+          class="mt-5 mx-auto w-[60%] border-t-4 border-lightPurple rounded-xl"
+        ></div>
 
-    <div id="projects" class="w-full h-screen flex flex-col items-center mt-5">
-      <div class="toppart w-full h-[40%] flex flex-col items-center justify-end">
-          <h1 class=" text-lightPurple font-extrabold text-9xl capitalize tracking-tight">Projects.</h1>
-      </div>
-      
-      
-      <div class="botpart w-full h-full bg-purple-900 bg-opacity-30 p-14 ml-5 mt-4 gap-10 rounded-3xl flex flex-col justify-center items-center">
-        <div class="cardcontainer w-full h-full flex justify-evenly items-center">
-          <div class="card1 w-80 h-80 cursor-pointer hover:scale-105 bg-ivory p-11 rounded-xl transition-all duration-800 ease-linear">
-            <h1 class="text-center text-black">Game designed: drag them all</h1>
+        <div class="w-[80%] mt-16 max-w-2xl mx-auto">
+          <!-- Section Header -->
+          <div class="text-center mb-10">
+            <h2 class="text-4xl font-bold tracking-tight capitalize">
+              Experience
+            </h2>
+            <p class="text-purple-400 mt-4">
+              Here’s a glimpse of my professional journey.
+            </p>
           </div>
 
-          <div class="card1 w-80 h-80 cursor-pointer hover:scale-105 bg-ivory p-11 rounded-xl transition-all duration-800 ease-linear">
+          <!-- Timeline Wrapper -->
+          <div class="relative border-l border-purple-600">
+            <!-- Experience card 1 -->
+            <div class="mb-10 ml-6">
+              <span
+                class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-darkPurple rounded-full ring-4 ring-darkPurple"
+              >
+                <i class="fas fa-code text-lightPurple"></i>
+              </span>
+              <div
+                class="bg-justPurple p-6 rounded-lg shadow-lg hover:shadow-purple-500 transition"
+              >
+                <h3 class="text-xl font-semibold">Game Developer Intern</h3>
+                <p class="text-sm text-purple-400 mb-2">
+                  JABSZ Gaming Studios LLP &bull; Sep 2024 - Present
+                </p>
+                <p class="text-lightPurple text-lg">
+                  Worked on Unity-based games, implementing C# scripts for
+                  gameplay and enhancing player mechanics. Contributed to AI
+                  logic for dynamic enemy behaviors.
+                </p>
+              </div>
+            </div>
 
+            <!-- Experience card 2 -->
+            <div class="mb-10 ml-6">
+              <span
+                class="absolute -left-3 flex items-center justify-center w-6 h-6 bg-darkPurple rounded-full ring-4 ring-darkPurple"
+              >
+                <i class="fas fa-laptop text-lightPurple"></i>
+              </span>
+              <div
+                class="bg-justPurple p-6 rounded-lg shadow-lg hover:shadow-purple-500 transition"
+              >
+                <h3 class="text-xl font-semibold">
+                  Freelance Creative Developer
+                </h3>
+                <p class="text-sm text-purple-400 mb-2">
+                  Jan 2022 - August 2023
+                </p>
+                <p class="text-lightPurple text-lg">
+                  Worked as a Freelance Creative Developer, designing unique
+                  logos and creating VFX edits using Adobe After Effects.
+                  Collaborated on small game development projects, transforming
+                  ideas into functional mini-games for academic and personal
+                  needs. This helped me sharpen my creative thinking,
+                  problem-solving, and skills with design and development tools.
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
+      <div id="projects" class="w-full h-auto flex flex-col items-center">
+        <div
+          class="toppart w-full h-[30%] flex flex-col items-center justify-end mt-20 lg:mt-24"
+        >
+          <h1
+            class="text-lightPurple font-extrabold text-8xl lg:text-9xl capitalize tracking-tight"
+          >
+            Projects.
+          </h1>
         </div>
 
+        <div
+          class="botpart w-[95%] h-auto bg-purple-900 bg-opacity-30 p-14 mt-4 gap-10 rounded-3xl flex flex-col justify-center items-center"
+        >
+          <div
+            class="cardcontainer w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10 p-5"
+          >
+            <!-- Project Card 1 -->
+            <div
+              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-3"
+            >
+              <!-- Image Section -->
+              <div
+                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                style="
+                  background-image: url('../Images/dragthemall\ ss.png');
+                "
+              >
+                <!-- Title on Image -->
+                <h2
+                  class="absolute inset-0 flex items-center justify-center bg-black bg-transparent text-opacity-0 hover:bg-black text-white text-center p-2 transition-all duration-500 hover:text-opacity-100 hover:text-4xl font-medium ease-in-out hover:bg-opacity-60 shadow-xl drop-shadow-xl"
+                >
+                  Drag Them All
+                </h2>
+              </div>
+
+              <!-- Technologies Used Section -->
+              <div class="p-4">
+                <h3
+                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                >
+                  2D Mobile Game
+                </h3>
+                <ul
+                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                >
+                  <li>Unity</li>
+                  <li>C#</li>
+                  <li>Game Mechanics</li>
+                  <li>Algorithms</li>
+                  <li>AES(Encryption)</li>
+                  <li>Photoshop</li>
+                  <li>Game Design Document</li>
+                </ul>
+                <!-- Links Section -->
+                <div class="flex gap-4 justify-center">
+                  <!-- GitHub Button -->
+                  <a
+                    href="https://github.com/Conan0122/DragThemAll"
+                    target="_blank"
+                    class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-gray-800 hover:to-black hover:scale-105 transition-transform"
+                  >
+                    GitHub
+                  </a>
+                  <!-- Visit Button -->
+                  <!-- <a
+                    href="https://project-host-link.com"
+                    target="_blank"
+                    class="bg-gradient-to-r from-purple-500 to-purple-700 text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-purple-600 hover:to-purple-800 hover:scale-105 transition-transform"
+                  >
+                    Visit
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div
+              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-5"
+            >
+              <!-- Image Section -->
+              <div
+                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                style="background-image: url('../Images/easyGO\ ss.png')"
+              >
+                <!-- Title on Image -->
+                <h2
+                  class="absolute inset-0 flex items-center justify-center bg-black bg-transparent text-opacity-0 hover:bg-black text-white text-center p-2 transition-all duration-500 hover:text-opacity-100 hover:text-4xl font-medium ease-in-out hover:bg-opacity-60 shadow-xl drop-shadow-xl"
+                >
+                  easyGo.
+                </h2>
+              </div>
+
+              <!-- Technologies Used Section -->
+              <div class="p-4">
+                <h3
+                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                >
+                  All in one Vehicle Rental
+                </h3>
+                <ul
+                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                >
+                  <li>ReactJS</li>
+                  <li>Tailwind CSS</li>
+                  <li>Firebase</li>
+                  <li>EmailJS</li>
+                  <li>Authentication</li>
+                </ul>
+                <!-- Links Section -->
+                <div class="flex gap-4 justify-center">
+                  <!-- GitHub Button -->
+                  <a
+                    href="https://github.com/Conan0122/easyGo"
+                    target="_blank"
+                    class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-gray-800 hover:to-black hover:scale-105 transition-transform"
+                  >
+                    GitHub
+                  </a>
+                  <!-- Visit Button -->
+                  <!-- <a
+                    href="https://project-host-link.com"
+                    target="_blank"
+                    class="bg-gradient-to-r from-purple-500 to-purple-700 text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-purple-600 hover:to-purple-800 hover:scale-105 transition-transform"
+                  >
+                    Visit
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div
+              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-5"
+            >
+              <!-- Image Section -->
+              <div
+                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                style="background-image: url('../Images/Password\ generator\ ss.png')"
+              >
+                <!-- Title on Image -->
+                <h2
+                  class="absolute inset-0 flex items-center justify-center bg-black bg-transparent text-opacity-0 hover:bg-black text-white text-center p-2 transition-all duration-500 hover:text-opacity-100 hover:text-4xl font-medium ease-in-out hover:bg-opacity-60 shadow-xl drop-shadow-xl"
+                >
+                  GetPassword
+                </h2>
+              </div>
+
+              <!-- Technologies Used Section -->
+              <div class="p-4">
+                <h3
+                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                >
+                  Password Generator
+                </h3>
+                <ul
+                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                >
+                  <li>ReactJS</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+                <!-- Links Section -->
+                <div class="flex gap-4 justify-center">
+                  <!-- GitHub Button -->
+                  <a
+                    href="https://github.com/Conan0122/PasswordGenerator"
+                    target="_blank"
+                    class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-gray-800 hover:to-black hover:scale-105 transition-transform"
+                  >
+                    GitHub
+                  </a>
+                  <!-- Visit Button -->
+                  <!-- <a
+                    href="https://project-host-link.com"
+                    target="_blank"
+                    class="bg-gradient-to-r from-purple-500 to-purple-700 text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-purple-600 hover:to-purple-800 hover:scale-105 transition-transform"
+                  >
+                    Visit
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div
+              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-5"
+            >
+              <!-- Image Section -->
+              <div
+                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                style="background-image: url('../Images/Portfolio\ ss.png')"
+              >
+                <!-- Title on Image -->
+                <h2
+                  class="absolute inset-0 flex items-center justify-center bg-black bg-transparent text-opacity-0 hover:bg-black text-white text-center p-2 transition-all duration-500 hover:text-opacity-100 hover:text-4xl font-medium ease-in-out hover:bg-opacity-60 shadow-xl drop-shadow-xl"
+                >
+                  Portfolio
+                </h2>
+              </div>
+
+              <!-- Technologies Used Section -->
+              <div class="p-4">
+                <h3
+                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                >
+                  Personal Portfolio
+                </h3>
+                <ul
+                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                >
+                  <li>HTML</li>
+                  <li>Tailwind CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <!-- Links Section -->
+                <div class="flex gap-4 justify-center">
+                  <!-- GitHub Button -->
+                  <a
+                    href="https://github.com/Conan0122/portfolio"
+                    target="_blank"
+                    class="bg-gradient-to-r from-gray-700 via-gray-900 to-black text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-gray-800 hover:to-black hover:scale-105 transition-transform"
+                  >
+                    GitHub
+                  </a>
+                  <!-- Visit Button -->
+                  <!-- <a
+                    href="https://project-host-link.com"
+                    target="_blank"
+                    class="bg-gradient-to-r from-purple-500 to-purple-700 text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-purple-600 hover:to-purple-800 hover:scale-105 transition-transform"
+                  >
+                    Visit
+                  </a> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
 
-    
+    <footer
+      id="contact"
+      class="bg-black bg-opacity-20 mt-16 text-lightPurple py-12 px-6"
+    >
+      <!-- Footer Content Wrapper -->
+      <div
+        class="max-w-7xl mt-16 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
+        <!-- Contact Form Section-->
+        <div
+          class="contact-form bg-purple-900 bg-opacity-50 p-5 rounded-xl md:order-2 lg:order-3"
+        >
+          <h2 class="text-4xl font-semibold mb-4 text-center">Contact Me</h2>
+          <form
+            action="mailto:abhibhatt862@gmail.com"
+            method="POST"
+            enctype="text/plain"
+            class="space-y-4 flex flex-col items-center text-base"
+          >
+            <!-- Name -->
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              class="w-full bg-lightPurple border border-black rounded-md p-3 text-black focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder-gray-700"
+              required
+            />
+            <!-- Email -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              class="w-full bg-lightPurple border border-black rounded-md p-3 text-black focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder-gray-700"
+              required
+            />
+            <!-- Message -->
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              rows="3"
+              class="w-full bg-lightPurple rounded-md p-3 border border-black text-darkPurple focus:outline-none focus:ring-2 focus:ring-purple-500 placeholder-gray-700"
+              required
+            ></textarea>
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="bg-lightPurple text-black font-medium px-4 py-2 rounded-md hover:bg-purple-400 transition duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
 
-  </main>
-  <footer class="w-full h-screen ">
-    <div class="w-full h-screen">
-      <h3 class="text-white">Designed and built by Abhishek Bhatt</h3>
-    </div>
-  </footer>
-</body>
+        <!-- Quick Links Section -->
+        <div
+          class="quick-links flex flex-col items-center md:order-1 lg:order-1"
+        >
+          <h2 class="text-lg tracking-widest leading-loose font-semibold mb-2">
+            Quick Links
+          </h2>
+          <ul
+            class="space-y-2 tracking-wider text-base p-5 flex flex-col items-center"
+          >
+            <li><a href="#home" class="hover:text-purple-400">Home</a></li>
+            <li><a href="#about" class="hover:text-purple-400">About Me</a></li>
+            <li>
+              <a href="#experience" class="hover:text-purple-400">Experience</a>
+            </li>
+            <li>
+              <a href="#projects" class="hover:text-purple-400">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" class="hover:text-purple-400">Contact</a>
+            </li>
+          </ul>
+        </div>
 
+        <!-- Social Media Section -->
+        <div
+          class="social-media flex flex-col items-center md:order-3 lg:order-2"
+        >
+          <h2 class="text-lg font-semibold mb-4">Follow Me</h2>
+          <div class="flex space-x-4">
+            <a
+              href="https://github.com/Conan0122"
+              target="_blank"
+              class="hover:text-purple-400"
+            >
+              <i class="fab fa-github fa-2xl"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abhibhatt2201"
+              target="_blank"
+              class="hover:text-purple-400"
+            >
+              <i class="fab fa-linkedin fa-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="text-center text-sm mt-10 border-t border-lightPurple pt-5">
+        <p>&copy; 2024 Abhishek Bhatt. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
