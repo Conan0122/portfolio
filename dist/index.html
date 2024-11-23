@@ -2,7 +2,7 @@
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
     <title>Abhishek Bhatt | Portfolio</title>
     <link rel="icon" href="Favicon Ab/favicon.ico" type="image/x-icon" />
 
@@ -37,7 +37,7 @@
 
         <!-- Desktop Menu -->
         <ul
-          class="hidden lg:flex font-light justify-center tracking-wider gap-8 items-center mx-10"
+          class="hidden lg:flex font-light justify-center tracking-wider gap-8 lg:gap-0 xl:gap-8 items-center mx-10"
         >
           <li
             class="hover:bg-purple-900 cursor-pointer p-4 rounded-full transition-colors duration-500 ease-in-out"
@@ -117,9 +117,8 @@
       >
         <!-- Left Part -->
         <div
-          class="leftPart mt-5 w-[90%] bg-black rounded-xl bg-opacity-70 p-10 lg:bg-transparent md:w-[70%]"
+          class="leftPart mt-5 h-auto w-[95%] bg-black rounded-xl bg-opacity-70 p-5 md:p-10 text-xl md:text-3xl lg:bg-transparent md:w-[70%]"
         >
-          <!-- <div class="leftPart ml-20 md:ml-0 md:w-1/2"> -->
           <h1>Hey,</h1>
           <h1
             class="text-3xl md:text-4xl md:mt-5 lg:text-5xl leading-loose cursor-pointer tracking-wider"
@@ -157,6 +156,7 @@
         class="absolute w-0 h-0 -z-10 top-[20%] left-0 border-l-[100vw] border-l-transparent border-b-[80vh] border-b-lightPurple"
       ></div>
 
+      <!-- About section -->
       <div
         id="about"
         class="w-full h-auto flex flex-col md:flex-row md:mt-20 items-center"
@@ -224,6 +224,7 @@
         </div>
       </div>
 
+      <!-- Experience section -->
       <section
         id="experience"
         class="bg-darkPurple text-lightPurple py-16 px-6"
@@ -260,9 +261,7 @@
                   JABSZ Gaming Studios LLP &bull; Sep 2024 - Present
                 </p>
                 <p class="text-lightPurple text-lg">
-                  Worked on Unity-based games, implementing C# scripts for
-                  gameplay and enhancing player mechanics. Contributed to AI
-                  logic for dynamic enemy behaviors.
+                  Collaborated on a 3D horror game, leveraging GitHub for version control and task management. Implemented asynchronous scene loading reducing perceived load time by 10%. Optimized a scene by pre-rendering it as video, reducing load time by 62% (from 8+ seconds to 3 seconds).
                 </p>
               </div>
             </div>
@@ -296,31 +295,35 @@
           </div>
         </div>
       </section>
+      <div
+      class="mx-auto w-[60%] border-t-4 border-lightPurple rounded-xl"
+    ></div>
 
+      <!-- Projects -->
       <div id="projects" class="w-full h-auto flex flex-col items-center">
         <div
           class="toppart w-full h-[30%] flex flex-col items-center justify-end mt-20 lg:mt-24"
         >
           <h1
-            class="text-lightPurple font-extrabold text-8xl lg:text-9xl capitalize tracking-tight"
+            class="text-lightPurple font-extrabold text-6xl md:text-8xl lg:text-9xl capitalize tracking-tight"
           >
             Projects.
           </h1>
         </div>
 
         <div
-          class="botpart w-[95%] h-auto bg-purple-900 bg-opacity-30 p-14 mt-4 gap-10 rounded-3xl flex flex-col justify-center items-center"
+          class="botpart w-[95%] h-auto bg-purple-900 bg-opacity-30 p-5 mt-4 gap-10 rounded-3xl flex flex-col justify-center items-center"
         >
           <div
-            class="cardcontainer w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-10 p-5"
+            class="cardcontainer w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 justify-items-center gap-10 md:gap-8"
           >
             <!-- Project Card 1 -->
             <div
-              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-3"
+              class="card w-full sm:w-72 md:w-80 lg:w-96 bg-lightPurple shadow-lg rounded-xl outline-none overflow-hidden transition-all duration-500 hover:-translate-y-3"
             >
               <!-- Image Section -->
               <div
-                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                class="relative h-40 md:h-52 bg-darkPurple bg-cover bg-no-repeat bg-center"
                 style="background-image: url('Images/dragthemall\ ss.png')"
               >
                 <!-- Title on Image -->
@@ -332,14 +335,14 @@
               </div>
 
               <!-- Technologies Used Section -->
-              <div class="p-4">
+              <div class="p-2 md:p-4">
                 <h3
-                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                  class="text-lg text-center font-semibold mb-1 md:mb-3 text-gray-800"
                 >
                   2D Mobile Game
                 </h3>
                 <ul
-                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                  class="text-sm text-gray-700 mb-2 md:mb-5 list-disc list-inside grid grid-cols-2"
                 >
                   <li>Unity</li>
                   <li>C#</li>
@@ -373,11 +376,11 @@
 
             <!-- Project Card 2 -->
             <div
-              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-5"
+              class="card w-full sm:w-72 md:w-80 lg:w-96 bg-lightPurple shadow-lg rounded-xl outline-none overflow-hidden transition-all duration-500 hover:-translate-y-3"
             >
               <!-- Image Section -->
               <div
-                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                class="relative h-40 md:h-52 bg-darkPurple bg-cover bg-no-repeat bg-center"
                 style="background-image: url('Images/easyGO\ ss.png')"
               >
                 <!-- Title on Image -->
@@ -389,14 +392,14 @@
               </div>
 
               <!-- Technologies Used Section -->
-              <div class="p-4">
+              <div class="p-2 md:p-4">
                 <h3
-                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                  class="text-lg text-center font-semibold mb-1 md:mb-3 text-gray-800"
                 >
                   All in one Vehicle Rental
                 </h3>
                 <ul
-                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                  class="text-sm text-gray-700 mb-2 md:mb-5 list-disc list-inside grid grid-cols-2"
                 >
                   <li>ReactJS</li>
                   <li>Tailwind CSS</li>
@@ -428,11 +431,11 @@
 
             <!-- Project Card 3 -->
             <div
-              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-5"
+              class="card w-full sm:w-72 md:w-80 lg:w-96 bg-lightPurple shadow-lg rounded-xl outline-none overflow-hidden transition-all duration-500 hover:-translate-y-3"
             >
               <!-- Image Section -->
               <div
-                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                class="relative h-40 md:h-52 bg-darkPurple bg-cover bg-no-repeat bg-center"
                 style="
                   background-image: url('Images/Password\ generator\ ss.png');
                 "
@@ -446,14 +449,14 @@
               </div>
 
               <!-- Technologies Used Section -->
-              <div class="p-4">
+              <div class="p-2 md:p-4">
                 <h3
-                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                  class="text-lg text-center font-semibold mb-1 md:mb-3 text-gray-800"
                 >
                   Password Generator
                 </h3>
                 <ul
-                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                  class="text-sm text-gray-700 mb-2 md:mb-5 list-disc list-inside grid grid-cols-2"
                 >
                   <li>ReactJS</li>
                   <li>Tailwind CSS</li>
@@ -469,24 +472,24 @@
                     GitHub
                   </a>
                   <!-- Visit Button -->
-                  <!-- <a
-                    href="https://project-host-link.com"
+                  <a
+                    href="https://getpassword.vercel.app"
                     target="_blank"
                     class="bg-gradient-to-r from-purple-500 to-purple-700 text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-purple-600 hover:to-purple-800 hover:scale-105 transition-transform"
                   >
                     Visit
-                  </a> -->
+                  </a>
                 </div>
               </div>
             </div>
 
             <!-- Project Card 4 -->
             <div
-              class="card w-96 bg-lightPurple shadow-lg rounded-lg overflow-hidden transition-all duration-500 hover:-translate-y-5"
+              class="card w-full sm:w-72 md:w-80 lg:w-96 bg-lightPurple shadow-lg rounded-xl outline-none overflow-hidden transition-all duration-500 hover:-translate-y-3"
             >
               <!-- Image Section -->
               <div
-                class="relative h-56 bg-darkPurple bg-contain bg-no-repeat bg-center"
+                class="relative h-40 md:h-52 bg-darkPurple bg-cover bg-no-repeat bg-center"
                 style="background-image: url('Images/Portfolio\ ss.png')"
               >
                 <!-- Title on Image -->
@@ -498,14 +501,14 @@
               </div>
 
               <!-- Technologies Used Section -->
-              <div class="p-4">
+              <div class="p-2 md:p-4">
                 <h3
-                  class="text-lg text-center font-semibold mb-3 text-gray-800"
+                  class="text-lg text-center font-semibold mb-1 md:mb-3 text-gray-800"
                 >
                   Personal Portfolio
                 </h3>
                 <ul
-                  class="text-sm text-gray-700 mb-5 list-disc list-inside grid grid-cols-2"
+                  class="text-sm text-gray-700 mb-2 md:mb-5 list-disc list-inside grid grid-cols-2"
                 >
                   <li>HTML</li>
                   <li>Tailwind CSS</li>
@@ -522,24 +525,26 @@
                     GitHub
                   </a>
                   <!-- Visit Button -->
-                  <!-- <a
-                    href="https://project-host-link.com"
+                  <a
+                    href="https://portfolioabhii.vercel.app"
                     target="_blank"
                     class="bg-gradient-to-r from-purple-500 to-purple-700 text-white px-5 py-2 rounded-lg text-sm font-medium hover:from-purple-600 hover:to-purple-800 hover:scale-105 transition-transform"
                   >
                     Visit
-                  </a> -->
+                  </a>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+
       </div>
     </main>
 
     <footer
       id="contact"
-      class="bg-black bg-opacity-20 mt-16 text-lightPurple py-12 px-6"
+      class="bg-black bg-opacity-20 mt-7 rounded-t-xl md:mt-16 text-lightPurple py-12 px-6"
     >
       <!-- Footer Content Wrapper -->
       <div
